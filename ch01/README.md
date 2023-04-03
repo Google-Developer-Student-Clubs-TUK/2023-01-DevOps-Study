@@ -18,15 +18,17 @@
 - Docker cli 기본 명령어
     - run / exec / stop / log
         - docker pull
-        - docker run hello-world
-        - docker run -it ubuntu bash
-        - daemon으로 실행 -d
-        - exec
-        - docker log
-        - docker stop
-        - docker rm
         - docker image ls
-        - image 찾는 순서
+        - docker run hello-world
+        - docker의 종료시점에 대해 설명
+        - docker run -it ubuntu bash
+        - image 찾는순서
+        - daemon으로 실행 -d (ctrl p + q)
+        - docker ps
+        - docker exec (세션에 대한 설명, while true; do echo 1; sleep 2; done)
+        - docker log
+        - docker stop/kill (Root process에 SIGTERM, SIGKILL, gracefully shutdown)
+        - docker rm
         - env, volume, port 옵션
 
 - 다음주차 frontend 잠깐 설명
