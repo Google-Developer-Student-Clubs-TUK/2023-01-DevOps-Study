@@ -2,6 +2,11 @@
 
 ~~준비물 : AWS회원가입~~
 
+사이트가서다운
+1. iterm
+2. oh-my-zsh
+3. zsh-autosuggestions
+
 ## 내용
 - aws ubuntu ec2 instance 설정, ssh 로그인
 
@@ -26,10 +31,9 @@
         - daemon으로 실행 -d (ctrl p + q)
         - docker ps
         - docker exec (세션에 대한 설명, while true; do echo 1; sleep 2; done)
-        - docker log
-        - docker stop/kill (Root process에 SIGTERM, SIGKILL, gracefully shutdown)
-        - docker rm
-        - env, volume, port 옵션
+        - docker stop/kill (Root process에 SIGTERM, SIGKILL, rolling 배포방식에서의 gracefully shutdown)
+        - docker rm / --rm
+        - --name, env, port(포트포워딩) 옵션
 
 - 다음주차 frontend 잠깐 설명
     - react
