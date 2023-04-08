@@ -17,8 +17,8 @@
 
 - docker-entrypoint.sh파일 제작
     - entrypoint란?
-    - 간단한 쉘스크립트
-    - docker서비스를 긴급 재시작할수있도록 만드는 trick
+    - gosu를 포함한 간단한 쉘스크립트
+    - docker서비스를 긴급 재시작할수있도록 만드는 trick (쉘프로그래밍)
 
 ## 과제
 
