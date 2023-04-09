@@ -1,6 +1,6 @@
 # GDSC 2023-1 DevOps Study
 
-## study 내용(정민창)
+## study 내용
 
 nodejs기반 웹서비스를 container화 해보고, 이를 CI/CD pipeline을 구축하여 자동화해보기
 
