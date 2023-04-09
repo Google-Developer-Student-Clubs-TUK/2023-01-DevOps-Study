@@ -19,9 +19,11 @@
     -> 이제 브라우저에서 http://localhost:8080 또는 http://127.0.0.18080 주소로 접속해 어플리케이션을 확인할 수 있음. 
     
     <p align="center">
-        <img src="" />
+        <img width="1512" alt="스크린샷 2023-04-09 오후 1 31 34" src="https://user-images.githubusercontent.com/65451455/230754760-761660c5-e818-4a51-bcaf-959d21351561.png" width="50%" height="20%">
     </p>
     
+    
+
     
 6. http-server는 Node.js환경에서 동작하는 정적 파일 서버이다. 이 모듈은 로컬에서 HTML, CSS, JS파일들을 실행하기 위한 간단한 방법을 제공한다.
 
