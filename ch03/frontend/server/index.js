@@ -18,8 +18,8 @@ const delayResponseAPI = async (_, res) => {
     return res.send('OK');
 };
 
-app.get('/*', renderIndex);
 app.get('/api', delayResponseAPI);
+app.get('/*', renderIndex);
 
 const server = app.listen(PORT, () => {
     console.log(`[Info] Server is listening on port ${PORT}`);
