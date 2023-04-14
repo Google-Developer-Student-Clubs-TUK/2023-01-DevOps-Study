@@ -20,7 +20,7 @@
     - FROM, COPY, RUN으로 간단하게 구성
     - 실행
     - port -p 옵션
-    - signal handling 작동여부 검사 - 3주차에 원인설명 지금은 추측해보기
+    - signal handling 작동여부 검사
 
 - nginx webserver에 대해 설명
     - reverse proxy에 대한 설명
