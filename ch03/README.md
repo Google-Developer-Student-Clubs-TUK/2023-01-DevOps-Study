@@ -5,14 +5,16 @@
 - Runtime과 BuildTime
     - Dockerfile에서 Runtime 조건이 추가되어야한다면?
     - 스크립트에 대해서 signal handling 작동여부 검사
+    - exec란?
 - tini에 대해
     - Root process 와 signal handling
     - trap
     - tini
 - Dockerfile cache에 대해서
     - layer
+    - RUN 에따른 용량차이 - apt를 이용해 체크해보기
 - multi stage build란?
-    - 용량 => apt install을 예시로 작성요령설명
+    - 이미지 크기 줄이기
     - alpine이란?
     - M1 mac에서의 환경설정.... (DOCKER_DEFAULT_PLATFORM=linux/amd64)
 - cache, multi stage build, tini까지 포함된 Dockerfile제작해보기
@@ -20,7 +22,7 @@
     - Dockerfile의 USER 명령어
     - 권한 및 gosu란? 권한드랍이란?
 - docker-entrypoint.sh파일 제작
-    - entrypoint란? + 예시
+    - entrypoint란? + 예시 [nodejs](https://github.com/nodejs/docker-node)
     - 간단한 쉘스크립트
     - gosu 포함하여 추가작성
     - docker서비스를 긴급 재시작할수있도록 만드는 trick
@@ -28,4 +30,5 @@
 ## 과제
 
 - CMD와 ENTRYPOINT의 차이점은?
-- 기존파일 nginx버전도 수정해보기
+- 기존파일 nginx버전도 Dockerfile도 최대한 수정해보기
+- 주어진 문서 읽어보기
