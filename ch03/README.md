@@ -28,3 +28,4 @@
 - 기존파일 nginx버전도 Dockerfile도 최대한 수정해보기
 - 주어진 문서 읽어보기 [컨테이너 빌드에 대한 권장사항](https://cloud.google.com/architecture/best-practices-for-building-containers?hl=ko)
 [avoid_running_as_root](https://cloud.google.com/architecture/best-practices-for-operating-containers?hl=ko#avoid_running_as_root)
+[vercel의 dockerfile예제](https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile)
