@@ -21,14 +21,10 @@
 - gosu와 tini에 대해
     - Dockerfile의 USER 명령어
     - 권한 및 gosu란? 권한드랍이란?
-- docker-entrypoint.sh파일 제작
+- docker-entrypoint.sh란?
     - entrypoint란? + 예시 [nodejs](https://github.com/nodejs/docker-node)
-    - 간단한 쉘스크립트
-    - gosu 포함하여 추가작성
-    - docker서비스를 긴급 재시작할수있도록 만드는 trick
 
 ## 과제
-
-- CMD와 ENTRYPOINT의 차이점은?
 - 기존파일 nginx버전도 Dockerfile도 최대한 수정해보기
 - 주어진 문서 읽어보기 [컨테이너 빌드에 대한 권장사항](https://cloud.google.com/architecture/best-practices-for-building-containers?hl=ko)
+[avoid_running_as_root](https://cloud.google.com/architecture/best-practices-for-operating-containers?hl=ko#avoid_running_as_root)
