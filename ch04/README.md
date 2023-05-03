@@ -2,20 +2,17 @@
 
 ## 내용
 
-- docker-entrypoint.sh
-    - 간단한 쉘스크립트
-    - gosu 포함하여 추가작성
-    - docker서비스를 긴급 재시작할수있도록 만드는 trick
-
 - backend dockerfile 생성 - 간단
 
 - backend와 postgresql 연결하는법 - 네트워크 관련된 내용
+    - postgresql Dockerfile 실행 - docker-entrypoint 확인
     - backend(local), postgresql(docker) 일경우 연결
     - backend(docker), postgresql(docker) 일경우 연결
 
 - docker compose로 backend 서비스 구축
     - docker compose란?
-    - network
+    - yml 작성 depends_on, image(build), volumes
+    - up, down, build, pull 특징
 
 ## 과제
 aws free tier 아이디 만들어오기 (2FA 꼭 등록할것)
