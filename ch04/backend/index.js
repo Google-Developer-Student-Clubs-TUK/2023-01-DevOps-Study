@@ -24,9 +24,9 @@ url.port = DB_PORT;
 
 const main = async () => {
     const pool = await createPool(url.toString());
-    app.get('/', async () => {
+    app.get('/', async (req, res) => {
         const result = await pool.query(sql.unsafe`SELECT 1`);
-        return result.json(result);
+        return res.json(result);
     });
     const server = app.listen((PORT ??= 3000, PORT), () => {
         console.log(`Server is Listening on PORT ${PORT}`);
