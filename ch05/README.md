@@ -5,4 +5,8 @@
     - yml 작성 depends_on, image(build), volumes
     - up, down, build, pull 특징
 
-- aws ec2에 docker-compose 로 웹서비스 배포
+- docker hub에 push
+
+- aws ec2 인스턴스 생성
+    - 기본 세팅
+    - docker-compose 로 웹서비스 배포
