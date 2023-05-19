@@ -2,13 +2,13 @@ FROM node:18-alpine as base
 
 FROM base as server-dep
 WORKDIR /opt/server
-COPY ./frontend/server/package*.json .
+COPY ./frontend/server/package*.json ./
 RUN npm ci --omit dev
 # /opt/server/node_modules - 서버실행시 필요한 dep
 
 FROM base as frontend-dep
 WORKDIR /opt/frontend
-COPY ./frontend/package*.json .
+COPY ./frontend/package*.json ./
 RUN npm ci --omit dev
 # /opt/frontend/node_modules - frontend 빌드에 필요한 dep
 
@@ -18,7 +18,7 @@ COPY ./public ./public
 COPY --from=frontend-dep /opt/frontend/node_modules ./node_modules
 COPY ./package.json ./tsconfig.json ./
 COPY ./src ./src
-RUN npm build
+RUN npm run build
 # /opt/frontend/build - 실행에 필요한 static 파일들이 위치
 
 FROM base as runner
@@ -60,6 +60,7 @@ RUN adduser --disabled-password gdsc
 
 COPY ./frontend/server/index.js \
      ./frontend/server/package.json ./
+COPY --from=builder /opt/frontend/build/ ./build/
 COPY --from=server-dep /opt/server/node_modules ./node_modules
 
 # ENTRYPOINT ["/sbin/tini", "--"]
